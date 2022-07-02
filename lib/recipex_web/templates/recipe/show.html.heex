@@ -1,0 +1,22 @@
+<li>
+  <a href={Routes.recipe_path(RecipexWeb.Endpoint, :index)}>Home</a>
+</li>
+
+<section class="phx-hero">
+  <h1><%= assigns[:recipe].title %></h1>
+  <img src={assigns[:recipe].image} alt={assigns[:recipe].title}/>
+
+  <%= raw markdown_to_html(assigns[:recipe].description) %>
+
+  <h3>Created by: <%= assigns[:recipe].chef_name%></h3>
+
+  <h4>Tags</h4>
+  <ul>
+    <%= for tag <- assigns[:recipe].tags do %>
+      <li>
+        <span><%=tag%></span>
+      </li>
+    <% end %>
+  </ul>
+</section>
+

@@ -1,0 +1,12 @@
+<section class="phx-hero">
+    <h2>Recipes</h2>
+    <ul>
+      <%= for recipe <- assigns[:recipes] do %>
+        <li>
+          <a href={Routes.recipe_path(RecipexWeb.Endpoint, :show, recipe.id)}><%= recipe.title %></a>
+          <img src={recipe.image} alt={recipe.title}/>
+        </li>
+      <% end %>
+    </ul>
+</section>
+
