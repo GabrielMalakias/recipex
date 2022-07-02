@@ -2,9 +2,9 @@
 
 ## Overview
 
-This app display recipes by retrieving them from Contentful and storing them in the registry
+This app display recipes by retrieving them from Contentful and storing them in the registry, should be super fast ;)
 
-![Home](./images/home.jpg)
+![Home](https://github.com/GabrielMalakias/recipex/blob/1855ca7f0d9b983515101faa7b99654a22a797be/images/home.png)
 ![Details](https://github.com/GabrielMalakias/recipex/blob/7956250cf6f28f1340b4f2e9c08b9b0ece3aedc3/images/details.png)
 
 ## Installing
