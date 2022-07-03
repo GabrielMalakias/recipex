@@ -1,6 +1,6 @@
 defmodule Recipex.Client do
   @moduledoc """
-  Executes a request to the contentful page to retrieve the recipe entries and
+  Executes a request to the contentful API to retrieve the recipe entries and
   uses the mapper to return a model
   """
 

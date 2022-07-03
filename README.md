@@ -2,20 +2,20 @@
 
 ## Overview
 
-This app display recipes by retrieving them from Contentful and storing them in the registry, should be super fast ;)
+This app display recipes by retrieving them from Contentful and storing them in the registry, it should be super fast ;)
 
 ![Home](https://github.com/GabrielMalakias/recipex/blob/1855ca7f0d9b983515101faa7b99654a22a797be/images/home.png)
 ![Details](https://github.com/GabrielMalakias/recipex/blob/7956250cf6f28f1340b4f2e9c08b9b0ece3aedc3/images/details.png)
 
 ## Installing
 
-First install elixir, this project uses 1.13.4, there are many ways to do that for more details check some options like:
+First install elixir, this project uses 1.13.4, there are many ways to do that, for more details check some options like:
 
 - https://asdf-vm.com/
 - https://github.com/taylor/kiex
 
 After installing elixir you can install the dependencies by running `./scripts/setup`
-To make sure everything was installed correctly and the app works, please run `./scripts/start`
+To make sure everything was installed correctly and the app works and then please run `./scripts/start`
 In case you would like to run using docker the application can be started by running `docker-compose up -d`
 Otherwise you can simply run `./scripts/start`
 
@@ -23,7 +23,7 @@ If you have added code please make sure you run `mix credo` before pushing it to
 
 ### How it works
 
-There is a Genserver named worker that given the interval configured. It can be configured in the following way:
+There is a Genserver named worker that given the interval configured it pulls data from the API. It can be configured in the following way:
 ```elixir
 config :recipex, cache_expiration: :timer.seconds(30)
 ```
@@ -38,4 +38,4 @@ The idea behind using the `Registry` as cache comes from my experience with Redi
 
 I could have improved a bit more the Mapper to avoid some loops but as everything is handled in background I though it wouldnt make that much of a difference for now.
 
-I did not spend time trying to improve the views, so they look quite ugly
+I did not spend time trying to improve the views, so they look a bit ugly.
